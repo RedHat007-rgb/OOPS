@@ -3,42 +3,44 @@ package com.example;
 
 
 public abstract class User {
-    private String UserId;
+    private String userId;
     private String name;
     private String contactInfo;
+    private static int totalUsers=0;
 
-    public User(){
-    this.UserId=generateUniqueId();
-        
+    User(){
+        userId=generateID();
     }
 
-    public User(String name,String contactInfo){
-        UserId=generateUniqueId();
+    User(String name,String conatactInfo){
+        this.userId=generateID();
         this.name=name;
-        this.contactInfo=contactInfo;
+        this.contactInfo=conatactInfo;
     }
 
-
-    public User(User user){
-        this.UserId=generateUniqueId();
+    User(User user){
+        this.userId=generateID();
         this.name=user.name;
         this.contactInfo=user.contactInfo;
     }
 
-
-    abstract void dispalyDashboard();
-    abstract boolean canBorrowBooks();
-
-    public String getUserId(){
-        return UserId;
+    private static  String generateID(){
+        totalUsers=totalUsers+1;
+        return "";
     }
 
-    public String getName() {
-        return this.name;
+    public abstract void displayDashboard();
+    public abstract boolean canBorrowBooks();
+
+    public void setName(String name){
+        this.name=name;
+    }
+    public String getName(){
+        return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getUserId() {
+        return this.userId;
     }
 
     public String getContactInfo() {
@@ -49,13 +51,5 @@ public abstract class User {
         this.contactInfo = contactInfo;
     }
 
-
-    private String generateUniqueId(){
-        return "";
-    }
-
-
-
-
-
+    
 }
