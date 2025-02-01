@@ -24,9 +24,9 @@ public abstract class User {
         this.contactInfo=user.contactInfo;
     }
 
-    private static  String generateID(){
+    private final String generateID(){
         totalUsers=totalUsers+1;
-        return "";
+        return "UserID:"+totalUsers;
     }
 
     public abstract void displayDashboard();

@@ -4,8 +4,6 @@ public class librarian extends User{
     private String employeeNumber;
 
 
-    public librarian(){}
-
     public librarian(String name,String contactInfo,String employeeNumber){
         super(name,contactInfo);
         this.employeeNumber=employeeNumber;
@@ -13,8 +11,8 @@ public class librarian extends User{
     
     public void displayDashboard() {
         System.out.println("Librarian Dashboard........");
-        System.out.println("Name of the User:"+getName());
-        System.out.println("Id"+getUserId());
+        System.out.println("Name of the Librarian:"+getName());
+        System.out.println("Employee number"+employeeNumber);
     }
 
     
