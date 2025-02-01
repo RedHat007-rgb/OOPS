@@ -6,6 +6,7 @@ public class Client {
     
     public static void main(String[] args) {
         // Animal animal=new Animal();
+        // animal.walk();
         Scanner sc=new Scanner(System.in);
         System.out.println("Tell me which animal u want");
         String animaltype=sc.nextLine();

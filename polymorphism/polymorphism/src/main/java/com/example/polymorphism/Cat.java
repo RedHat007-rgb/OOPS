@@ -7,4 +7,9 @@ public class Cat extends Animal{
         System.out.println("cat is meoing....");
     }
 
+
+    public void walk(){
+        System.out.println("Cat is walking.....");
+    }
+
 }

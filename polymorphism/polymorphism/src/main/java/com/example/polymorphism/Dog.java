@@ -5,4 +5,8 @@ public class Dog extends Animal{
     public void bark(){
         System.err.println("bhau bhau");
     }
+    
+    public void walk(){
+        System.err.println("dog is walking.....");
+    }
 }
