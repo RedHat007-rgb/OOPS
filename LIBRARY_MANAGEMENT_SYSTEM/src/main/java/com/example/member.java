@@ -27,12 +27,7 @@ public class member extends User{
     }
 
 
-    public void addNewBook(Book book){
-
-    }
-
-    public void removeBook(Book Book){
-
-    }
+    
 
 }
+
