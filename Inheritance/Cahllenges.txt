@@ -1,0 +1,38 @@
+Great progress! Here are some challenges to reinforce your understanding:
+
+1️⃣ Deep Copy vs Shallow Copy
+Challenge:
+Create a Person class with name and an Address object. Implement both shallow copy and deep copy for the Person class using cloning.
+
+Requirements:
+
+Implement shallow copy using clone().
+Implement deep copy using copy constructor or by overriding clone() properly.
+2️⃣ Inheritance & Method Overriding
+Challenge:
+Create a base class Animal with a method makeSound().
+Derive two classes: Dog and Cat, and override makeSound() to print "Bark" and "Meow", respectively.
+
+Bonus: Add a speakTwice() method in Animal that calls makeSound() twice. Observe how method overriding works.
+
+3️⃣ Constructor Chaining
+Challenge:
+Create a class hierarchy:
+Vehicle (superclass) → Car (subclass) → ElectricCar (subclass of Car).
+
+Ensure constructor chaining happens properly from Vehicle → Car → ElectricCar.
+
+Requirements:
+
+Vehicle should have a brand property.
+Car should add a model property.
+ElectricCar should add a batteryCapacity.
+Call the parent class constructor using super() in each subclass.
+4️⃣ Using this and super
+Challenge:
+Create a Student class with:
+
+A constructor that initializes name and age.
+A method printDetails() that prints student info.
+A display() method that calls printDetails() using this.
+Create a subclass GraduateStudent that adds a degree field and overrides printDetails(), using super.printDetails() to reuse code from Student.
