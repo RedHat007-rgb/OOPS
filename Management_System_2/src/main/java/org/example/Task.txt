@@ -1,0 +1,29 @@
+Real-World Mini-Project: Library Management System
+This project combines polymorphism, inheritance, and copy constructors into a practical,
+showcase-worthy application.
+Project Description:
+Build a simple library system to manage books and media items, demonstrating all your skills.
+Requirements
+Base Class: LibraryItem
+Fields: String title, int id, boolean isBorrowed.
+Method: displayInfo() (to be overridden).
+Shallow copy constructor.
+
+
+Subclasses:
+Book (extends LibraryItem):
+Additional field: int pages.
+Overridden displayInfo(): "Book: [title], ID: [id], Pages: [pages], Borrowed: [isBorrowed]".
+Deep copy constructor (duplicate all fields).
+DVD (extends LibraryItem):
+Additional field: int duration (in minutes).
+Overridden displayInfo(): "DVD: [title], ID: [id], Duration: [duration] mins, Borrowed: [isBorrowed]".
+Shallow copy constructor.
+Utility Class: LibraryManager
+Method: addItem(LibraryItem item) (overloaded for Book and DVD with specific messages).
+Method: displayAllItems(LibraryItem[] items) (uses polymorphism).
+Main Class
+Create a Book and a DVD.
+Make a deep copy of the Book and a shallow copy of the DVD.
+Modify the copies (e.g., borrow the copied Book, change the DVD title).
+Store all items in a LibraryItem[] array and display them.
